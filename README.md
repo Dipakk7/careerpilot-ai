@@ -124,7 +124,7 @@ To explore the architecture and planning documents created during Phase 1, refer
 *   [UI/UX Style & Design Guide](docs/UI_UX_GUIDE.md) — Obsidian-glassmorphism styling parameters, grid values, layout mockups, and Framer Motion dynamics.
 *   [Module Breakdown Specification](docs/MODULE_BREAKDOWN.md) — Responsibilities, inputs, outputs, database tables, and dependencies of all 12 modules.
 *   [System Workflow Specification](docs/SYSTEM_WORKFLOW.md) — Detailed user journey mappings, Mermaid charts, and systems error handling flows.
-*   [Development Roadmap Specification](docs/DEVELOPMENT_ROADMAP.md) — Detailed 28-day implementation planner detailing objectives, testing, and Git commits.
+*   [Development Roadmap Specification](docs/DEVELOPMENT_ROADMAP.md) — Detailed implementation roadmap including milestones,testing strategy and Git workflow.
 
 ---
 
