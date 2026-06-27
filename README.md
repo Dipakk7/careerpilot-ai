@@ -4,10 +4,19 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Next.js](https://img.shields.io/badge/Frontend-Next.js%2014-black?style=flat&logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/Language-TypeScript-blue?style=flat&logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Styling-Tailwind%20CSS-38bdf8?style=flat&logo=tailwind-css)](https://tailwindcss.com/)
 [![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688?style=flat&logo=fastapi)](https://fastapi.tiangolo.com/)
 [![Ollama](https://img.shields.io/badge/AI%20Engine-Ollama-blue?style=flat)](https://ollama.com/)
 
-CareerPilot AI is a modern, enterprise-ready, self-hosted AI SaaS platform designed to guide users through every stage of their professional journey. By combining parsing models (spaCy), vector embedding engines (Sentence Transformers), local large language models (Ollama with Qwen 2.5 3B Instruct), and a premium Next.js dashboard, CareerPilot AI offers a fully free, private, and powerful suite of career optimization tools.
+CareerPilot AI is a full-stack AI-powered career intelligence platform that helps users analyze resumes, evaluate ATS compatibility, match resumes with job descriptions using semantic search, prepare for interviews, and receive personalized career guidance—all while running completely locally using open-source AI.
+
+## ⭐ Why CareerPilot AI?
+
+*   **100% Free & Open Source:** Zero licensing fees, zero external API costs, and runs completely locally or on free cloud tiers.
+*   **Privacy-first Local AI using Ollama:** Your resume, credentials, and conversation history never leave your device.
+*   **End-to-End Career Intelligence Platform:** Replaces fragmented workflows with a single environment for resume optimization, ATS checks, mock interviews, and roadmap design.
+*   **Enterprise-grade Modular Architecture:** Clean, decoupled design using FastAPI, Next.js, and PostgreSQL for maximum performance and scalable code maintainability.
 
 ---
 
@@ -104,12 +113,30 @@ CareerPilot-AI/
 
 ---
 
+## 📖 Documentation Index
+
+To explore the architecture and planning documents created during Phase 1, refer to the following specifications in the `docs/` directory:
+
+*   [Project Requirements Document (PRD)](docs/PROJECT_REQUIREMENTS.md) — Product requirements, functional constraints, and persona descriptions.
+*   [Software Architecture Document (SAD)](docs/SOFTWARE_ARCHITECTURE.md) — Clean architecture layers, data sequence flow diagrams, and design justifications.
+*   [Database Design Specification](docs/DATABASE_DESIGN.md) — PostgreSQL schemas, index models, constraints, and GIN/JSONB details.
+*   [API Specification Contract](docs/API_SPECIFICATION.md) — RESTful API endpoint structures, HTTP statuses, cookies auth, and JSON mock payloads.
+*   [UI/UX Style & Design Guide](docs/UI_UX_GUIDE.md) — Obsidian-glassmorphism styling parameters, grid values, layout mockups, and Framer Motion dynamics.
+*   [Module Breakdown Specification](docs/MODULE_BREAKDOWN.md) — Responsibilities, inputs, outputs, database tables, and dependencies of all 12 modules.
+*   [System Workflow Specification](docs/SYSTEM_WORKFLOW.md) — Detailed user journey mappings, Mermaid charts, and systems error handling flows.
+*   [Development Roadmap Specification](docs/DEVELOPMENT_ROADMAP.md) — Detailed 28-day implementation planner detailing objectives, testing, and Git commits.
+
+---
+
 ## 📸 Screenshots
 
-*Screenshots will be populated upon completing Phase 1 UI construction.*
-*   `[Dashboard Preview]` - Visualizing skill gaps and matching metrics.
-*   `[Resume Parser]` - Side-by-side comparison of raw PDF and extracted entity schema.
-*   `[Interview Prep]` - Audio/text console for interactive AI interview simulators.
+| Feature       | Preview     |
+| ------------- | ----------- |
+| Dashboard     | Coming Soon |
+| Resume Parser | Coming Soon |
+| ATS Analysis  | Coming Soon |
+| Job Matching  | Coming Soon |
+| AI Assistant  | Coming Soon |
 
 ---
 
@@ -155,25 +182,54 @@ npm run dev
 
 ## 🗺️ Development Roadmap
 
-### Phase 1: Planning, Scaffolding & Setup (Current)
+### Phase 1: Planning, Scaffolding & Setup (Completed)
 *   [x] Enterprise Folder Architecture
-*   [ ] Relational Database Schema & Migrations Setup
-*   [ ] Local AI Pipeline Configuration (Ollama & spaCy)
+*   [x] Relational Database Schema & Design Spec
+*   [x] API Specifications & Contract Design
+*   [x] UI/UX Style and Design Guide
+*   [x] Module Breakdowns & System Workflows
+*   [x] 28-day Implementation Roadmap
 
-### Phase 2: Core Engineering & Parser API
-*   [ ] User JWT Authentication & Security Contexts
-*   [ ] PDF parser pipeline integration (spaCy & Regex fallback)
-*   [ ] Sentence Transformer-based matching algorithm
+### Phase 2: Project Setup & Authentication
+*   [ ] Backend Environment Setup & DB Scaffolding (Day 4)
+*   [ ] Frontend Project setup & shadcn/ui integration (Day 5)
+*   [ ] User JWT Auth API & HttpOnly cookies (Day 6)
 
-### Phase 3: AI Feature Modules
-*   [ ] ATS Assessment & Recommendation Engine
-*   [ ] Interactive Interview Simulator with Ollama feedback loop
-*   [ ] Visual roadmap builder and chart aggregators
+### Phase 3: Resume Upload
+*   [ ] Multipart upload API & validators (Day 7)
+*   [ ] PDF/DOCX text extraction engine (Day 8)
+*   [ ] Frontend drag-and-drop dashboard widget (Day 9)
 
-### Phase 4: UI/UX & Polish
-*   [ ] responsive Tailwind layout, sidebar navigation, and glassmorphic dashboards
-*   [ ] Plotly graph components integration
-*   [ ] End-to-end testing, logging, and deployment pipelines to Vercel/Render
+### Phase 4: Resume Parser
+*   [ ] Backend spaCy extraction pipelines (Day 10)
+*   [ ] Named Entity Recognition (NER) & skills tagging (Day 11)
+*   [ ] Side-by-side parsing visualizer layout (Day 12)
+
+### Phase 5: ATS Engine & Resume Optimization
+*   [ ] Formatting scanners & ATS scoring logic (Day 13)
+*   [ ] Ollama local LLM STAR rewriter service (Day 14)
+*   [ ] Compliance checklist & rewrite comparison drawer (Day 15)
+
+### Phase 6: Job Matching & Skill Gap Analysis
+*   [ ] Job description manager & extraction APIs (Day 16)
+*   [ ] Sentence Transformers similarity calculations (Day 17)
+*   [ ] Skill gap analysis & target training plans (Day 18)
+*   [ ] Plotly skill radar charts and match details (Day 19)
+
+### Phase 7: Interview, Career Roadmap & AI Assistant
+*   [ ] Mock interview loops & grader services (Day 20)
+*   [ ] Ollama roadmap generator step builder (Day 21)
+*   [ ] Chat assistant with context SSE stream (Day 22)
+*   [ ] Interview consoles, timelines & drawers (Day 23)
+
+### Phase 8: Dashboard, Analytics & UI Polish
+*   [ ] Analytics caching & database trend metrics (Day 24)
+*   [ ] Theme alignments, transitions & alert toasts (Day 25)
+
+### Phase 9: Testing & Deployment
+*   [ ] Unit (pytest) and E2E test suites (Day 26)
+*   [ ] Production hosting on Vercel & Render (Day 27)
+*   [ ] Repository cleanups & portfolio showcases (Day 28)
 
 ---
 
@@ -190,12 +246,22 @@ Contributions are welcome! To maintain software quality:
 
 ## 🔮 Future Scope
 
-*   **Multi-Agent Collaborative Simulations:** Interactive panel interviews with multiple AI interviewer profiles (e.g., HR Specialist, Technical Lead, Product Manager).
-*   **Resume Generative Builder:** Automated, pixel-perfect LaTeX-to-PDF export of AI-optimized resumes tailored dynamically for individual job links.
-*   **Web-Crawling Job Aggregator:** Active web scraping integrations matching user skills against real-time local open-source job boards.
+*   Multi-Agent AI Interview Panel
+*   AI Resume Builder & PDF Export
+*   Job Board Integrations
 
 ---
 
 ## 📄 License
 
 Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
+
+---
+
+## 👨‍💻 Connect With Me
+
+| Platform  | Link                           |
+| --------- | ------------------------------ |
+| GitHub    | https://github.com/Dipakk7     |
+| LinkedIn  | Add your LinkedIn profile here |
+| Portfolio | Add portfolio URL here         |
