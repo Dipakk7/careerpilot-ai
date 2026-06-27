@@ -180,56 +180,43 @@ npm run dev
 
 ---
 
-## 🗺️ Development Roadmap
+## 🗺️ Project Roadmap
 
-### Phase 1: Planning, Scaffolding & Setup (Completed)
-*   [x] Enterprise Folder Architecture
-*   [x] Relational Database Schema & Design Spec
-*   [x] API Specifications & Contract Design
-*   [x] UI/UX Style and Design Guide
-*   [x] Module Breakdowns & System Workflows
-*   [x] 28-day Implementation Roadmap
+CareerPilot AI is being developed incrementally, with features
+added and validated through iterative releases.
 
-### Phase 2: Project Setup & Authentication
-*   [ ] Backend Environment Setup & DB Scaffolding (Day 4)
-*   [ ] Frontend Project setup & shadcn/ui integration (Day 5)
-*   [ ] User JWT Auth API & HttpOnly cookies (Day 6)
+Current implementation status:
 
-### Phase 3: Resume Upload
-*   [ ] Multipart upload API & validators (Day 7)
-*   [ ] PDF/DOCX text extraction engine (Day 8)
-*   [ ] Frontend drag-and-drop dashboard widget (Day 9)
+### ✅ Foundation (Complete)
+- [x] System architecture and clean architecture design
+- [x] Comprehensive PostgreSQL relational database design
+- [x] REST API specification and endpoint contracts
+- [x] UI/UX design system and component library guide
+- [x] Module breakdown for all 12 core modules
+- [x] System workflows and sequence diagrams
+- [x] Enterprise-grade folder structure
 
-### Phase 4: Resume Parser
-*   [ ] Backend spaCy extraction pipelines (Day 10)
-*   [ ] Named Entity Recognition (NER) & skills tagging (Day 11)
-*   [ ] Side-by-side parsing visualizer layout (Day 12)
+### 🚀 Current Development
+- [ ] User authentication — JWT + HttpOnly Cookies + bcrypt
+- [ ] Resume upload — PDF and DOCX support with validation
+- [ ] Resume parser — spaCy NLP entity extraction
+- [ ] ATS scoring engine — 0 to 100 compatibility score
+- [ ] Job description matching — Sentence Transformers semantic search
+- [ ] Skill gap analysis — missing skills and recommendations
 
-### Phase 5: ATS Engine & Resume Optimization
-*   [ ] Formatting scanners & ATS scoring logic (Day 13)
-*   [ ] Ollama local LLM STAR rewriter service (Day 14)
-*   [ ] Compliance checklist & rewrite comparison drawer (Day 15)
+### 🤖 AI Features (Planned)
+- [ ] AI resume rewriter — Ollama + Qwen 2.5 3B + STAR method
+- [ ] Mock interview generator — role-specific questions and scoring
+- [ ] Career roadmap generator — step-by-step transition plans
+- [ ] AI career assistant — persistent context-aware chat
+- [ ] Analytics dashboard — Plotly charts and performance trends
 
-### Phase 6: Job Matching & Skill Gap Analysis
-*   [ ] Job description manager & extraction APIs (Day 16)
-*   [ ] Sentence Transformers similarity calculations (Day 17)
-*   [ ] Skill gap analysis & target training plans (Day 18)
-*   [ ] Plotly skill radar charts and match details (Day 19)
-
-### Phase 7: Interview, Career Roadmap & AI Assistant
-*   [ ] Mock interview loops & grader services (Day 20)
-*   [ ] Ollama roadmap generator step builder (Day 21)
-*   [ ] Chat assistant with context SSE stream (Day 22)
-*   [ ] Interview consoles, timelines & drawers (Day 23)
-
-### Phase 8: Dashboard, Analytics & UI Polish
-*   [ ] Analytics caching & database trend metrics (Day 24)
-*   [ ] Theme alignments, transitions & alert toasts (Day 25)
-
-### Phase 9: Testing & Deployment
-*   [ ] Unit (pytest) and E2E test suites (Day 26)
-*   [ ] Production hosting on Vercel & Render (Day 27)
-*   [ ] Repository cleanups & portfolio showcases (Day 28)
+### 🌐 Deployment (Planned)
+- [ ] Backend deployment — Render free tier
+- [ ] Frontend deployment — Vercel
+- [ ] Database hosting — Supabase free tier
+- [ ] CI/CD pipeline — GitHub Actions
+- [ ] Live demo URL and video walkthrough
 
 ---
 
