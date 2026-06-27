@@ -231,7 +231,7 @@ Contributions are welcome! To maintain software quality:
 
 ---
 
-## 🔮 Future Scope
+## 🔮 Future Enhancements
 
 *   Multi-Agent AI Interview Panel
 *   AI Resume Builder & PDF Export
