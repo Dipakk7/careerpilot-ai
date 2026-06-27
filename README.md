@@ -132,11 +132,11 @@ To explore the architecture and planning documents created during Phase 1, refer
 
 | Feature       | Preview     |
 | ------------- | ----------- |
-| Dashboard     | Coming Soon |
-| Resume Parser | Coming Soon |
-| ATS Analysis  | Coming Soon |
-| Job Matching  | Coming Soon |
-| AI Assistant  | Coming Soon |
+| Dashboard     | —  |
+| Resume Parser | —  |
+| ATS Analysis  | —  |
+| Job Matching  | —  |
+| AI Assistant  | —  |
 
 ---
 
