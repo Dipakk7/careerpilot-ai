@@ -250,5 +250,5 @@ Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 | Platform  | Link                           |
 | --------- | ------------------------------ |
 | GitHub    | https://github.com/Dipakk7     |
-| LinkedIn  | Add your LinkedIn profile here |
-| Portfolio | Add portfolio URL here         |
+| LinkedIn  | https://www.linkedin.com/in/dipakkhandagale/ |
+| Portfolio | https://dipakkhandagale.vercel.app/     |
