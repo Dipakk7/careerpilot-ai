@@ -140,7 +140,7 @@ To explore the architecture and planning documents created during Phase 1, refer
 
 ---
 
-## ⚙️ Installation & Setup (Placeholder)
+## ⚙️ Installation & Setup
 
 Detailed step-by-step instructions for running the stack locally in development mode:
 
