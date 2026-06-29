@@ -18,6 +18,7 @@ from app.core.config import settings
 # 3. Import ALL models before setting metadata.
 from app.models.base import Base
 from app.models.user import User
+from app.models.resume import Resume
 
 # 4. Set metadata AFTER all model imports
 target_metadata = Base.metadata

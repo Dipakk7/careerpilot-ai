@@ -1,6 +1,7 @@
 from datetime import datetime
+from typing import List
 from sqlalchemy import String, text
-from sqlalchemy.orm import Mapped, mapped_column
+from sqlalchemy.orm import Mapped, mapped_column, relationship
 from app.models.base import SharedBase
 
 class User(SharedBase):
@@ -45,3 +46,5 @@ class User(SharedBase):
     last_login: Mapped[datetime | None] = mapped_column(
         nullable=True
     )
+
+    resumes: Mapped[List["Resume"]] = relationship("Resume", back_populates="user", cascade="all, delete-orphan")

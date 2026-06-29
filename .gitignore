@@ -30,3 +30,7 @@ logs/
 # OS
 .DS_Store
 Thumbs.db
+
+# Uploaded resume files
+backend/storage/resumes/*
+!backend/storage/resumes/.gitkeep

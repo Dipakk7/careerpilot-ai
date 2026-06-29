@@ -7,6 +7,11 @@ from app.schemas.user import (
     Token,
     TokenData,
 )
+from app.schemas.resume import (
+    ResumeResponse,
+    ResumeListResponse,
+    ResumeUploadResponse,
+)
 
 __all__ = [
     "UserCreate",
@@ -15,4 +20,8 @@ __all__ = [
     "UserUpdate",
     "Token",
     "TokenData",
+    "ResumeResponse",
+    "ResumeListResponse",
+    "ResumeUploadResponse",
 ]
+

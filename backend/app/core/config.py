@@ -22,6 +22,15 @@ class Settings(BaseSettings):
     CORS_ORIGINS: Union[List[str], str] = ["http://localhost:3000"]
     LOG_LEVEL: str = "INFO"
 
+    STORAGE_PROVIDER: str = "LOCAL"
+    LOCAL_STORAGE_PATH: str = "storage/resumes"
+    MAX_FILE_SIZE_MB: int = 5
+    ALLOWED_EXTENSIONS: list[str] = ["pdf", "docx"]
+    ALLOWED_MIME_TYPES: dict = {
+        "pdf": "application/pdf",
+        "docx": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    }
+
     @field_validator("CORS_ORIGINS", mode="before")
     @classmethod
     def assemble_cors_origins(cls, v: Union[str, List[str]]) -> List[str]:
