@@ -20,6 +20,7 @@ logs/
 # Environment
 .env
 .env.*
+backend/.env
 
 # Database
 *.db

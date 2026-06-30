@@ -24,6 +24,20 @@ from app.schemas.ats import (
     ATSRecommendation,
     ATSScoreResponse,
 )
+from app.schemas.job_match import (
+    JobDescription,
+    MatchBreakdown,
+    MatchRecommendation,
+    JobMatchResponse,
+)
+from app.schemas.job_gap import (
+    SkillGap,
+    ExperienceGap,
+    EducationGap,
+    CertificationGap,
+    KeywordGap,
+    GapAnalysisResponse,
+)
 
 __all__ = [
     "UserCreate",
@@ -43,7 +57,18 @@ __all__ = [
     "ATSBreakdown",
     "ATSRecommendation",
     "ATSScoreResponse",
+    "JobDescription",
+    "MatchBreakdown",
+    "MatchRecommendation",
+    "JobMatchResponse",
+    "SkillGap",
+    "ExperienceGap",
+    "EducationGap",
+    "CertificationGap",
+    "KeywordGap",
+    "GapAnalysisResponse",
 ]
+
 
 
 

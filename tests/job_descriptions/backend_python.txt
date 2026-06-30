@@ -1,0 +1,36 @@
+# Backend Python Developer
+
+Company: PyTech Global
+
+Role: Senior Backend Python Developer
+
+We are looking for a Senior Backend Python Developer to build modern RESTful and GraphQL APIs.
+
+What You'll Do:
+- Design and develop robust backend systems and REST APIs.
+- Optimize database queries and system performance.
+- Implement CI/CD pipelines.
+
+Required Skills:
+- Python
+- FastAPI
+- PostgreSQL
+- Redis
+- Docker
+- Git
+
+Preferred Skills:
+- Django
+- Kubernetes
+- GitHub Actions
+- Poetry
+
+Experience:
+- 2-4 years of experience building backend web applications.
+- Experience Required: 3+ years working in a Python-based development team.
+
+Education:
+- B.Tech or BE in Computer Science.
+
+Certifications:
+- Kubernetes Certified Administrator (CKA).

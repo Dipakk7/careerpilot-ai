@@ -1,0 +1,38 @@
+# Machine Learning Engineer
+
+Employer: AI Innovations
+
+Hiring Company: AI Innovations
+
+Position: Senior ML Engineer
+
+We are seeking a talented Machine Learning Engineer to design and implement cutting-edge AI models.
+
+What You'll Do:
+- Develop and deploy large-scale machine learning and NLP models.
+- Optimize machine learning pipelines for production.
+- Work closely with data engineers to build robust data pipelines.
+
+Required Skills:
+- Python
+- PyTorch
+- Scikit-Learn
+- Pandas
+- NumPy
+
+Preferred Skills:
+- TensorFlow
+- spaCy
+- Hugging Face
+- Docker
+
+Experience:
+- 5+ years of experience in ML or data science.
+- Experience with LLM and NLP techniques.
+
+Education:
+- MS in Computer Science, Data Science, or related quantitative field.
+- PhD is a plus.
+
+Certifications:
+- TensorFlow Developer Certification.

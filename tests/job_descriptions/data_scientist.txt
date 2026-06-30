@@ -1,0 +1,33 @@
+# Data Scientist
+
+Company: DataCorp Analytics
+
+Job Title: Data Scientist
+
+We are looking for a Data Scientist to extract insights from complex datasets.
+
+Responsibilities:
+- Analyze large datasets to drive business decisions.
+- Build predictive models and machine learning systems.
+- Communicate findings to technical and non-technical stakeholders.
+
+Required Skills:
+- Python
+- SQL
+- Pandas
+- NumPy
+- R
+
+Preferred Skills:
+- PyTorch
+- Tableau
+- GCP
+
+Experience:
+- Minimum 4 years of experience as a Data Scientist or Data Analyst.
+
+Education:
+- Bachelor's or Master's degree in Statistics, Mathematics, or Computer Science.
+
+Certifications:
+- Google Cloud Certified Data Engineer is preferred.

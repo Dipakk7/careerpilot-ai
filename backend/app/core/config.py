@@ -33,6 +33,12 @@ class Settings(BaseSettings):
     ATS_MIN_EXPERIENCE_ENTRIES: int = 2
     ATS_RECOMMENDATION_LIMIT: int = 8
 
+    # Job Match settings
+    JOB_MATCH_MIN_SKILLS: int = 5
+    JOB_MATCH_MAX_RECOMMENDATIONS: int = 10
+    JOB_MATCH_KEYWORD_LIMIT: int = 100
+    JOB_MATCH_VERSION: str = "v1"
+
     STORAGE_PROVIDER: str = "LOCAL"
     LOCAL_STORAGE_PATH: str = "storage/resumes"
     MAX_FILE_SIZE_MB: int = 5
