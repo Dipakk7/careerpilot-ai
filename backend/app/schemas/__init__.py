@@ -19,6 +19,11 @@ from app.schemas.parser import (
     ParsedResumeData,
     ParseResumeResponse,
 )
+from app.schemas.ats import (
+    ATSBreakdown,
+    ATSRecommendation,
+    ATSScoreResponse,
+)
 
 __all__ = [
     "UserCreate",
@@ -35,6 +40,10 @@ __all__ = [
     "ProjectItem",
     "ParsedResumeData",
     "ParseResumeResponse",
+    "ATSBreakdown",
+    "ATSRecommendation",
+    "ATSScoreResponse",
 ]
+
 
 

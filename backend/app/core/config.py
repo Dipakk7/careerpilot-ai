@@ -28,6 +28,11 @@ class Settings(BaseSettings):
     MAX_PAGES: int = 10
     MAX_TEXT_LENGTH: int = 200000
 
+    # ATS settings
+    ATS_MIN_SKILLS_FOR_FULL_SCORE: int = 8
+    ATS_MIN_EXPERIENCE_ENTRIES: int = 2
+    ATS_RECOMMENDATION_LIMIT: int = 8
+
     STORAGE_PROVIDER: str = "LOCAL"
     LOCAL_STORAGE_PATH: str = "storage/resumes"
     MAX_FILE_SIZE_MB: int = 5
