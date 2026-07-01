@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.8.0] - 2026-07-01 (Phase 8)
+### Added
+- **AI Foundation**: Implemented a decoupled factory pattern for AI providers, a robust client for local Ollama deployments, and health check validation.
+- **Prompt Management System**: Created a Prompts Registry for loading, rendering via Jinja templates, caching outputs, handling retries, and recording token and time metrics.
+- **AI Resume Review Engine**: Developed a service to scan resumes, evaluate layout, structure, and impact, and output a structured JSON review with a Resume Quality Score.
+- **AI Resume Rewrite Engine**: Built interactive rewriting capabilities that structure bullet points to align with job descriptions or specific professional modes.
+- **AI Resume Optimization Engine**: Designed a service that calculates career readiness, industry alignment, keyword match ratios, and suggested improvement resources.
+- **Workflow Orchestration Engine**: Built a unified Orchestrator to parse, review, rewrite, and optimize resumes in a single end-to-end execution.
+- **Database Schema & Migrations**: Configured models and migrations for reviews, rewrites, and optimizations, resolving all head revisions in Alembic.
+- **Robust Endpoints**: Exposed FastAPI controllers for all AI operations, supporting streaming, schema-validated payloads, and historical CRUD.
+- **Test Coverage**: Added comprehensive test files covering AI Foundation, Prompt Cache, Review, Rewrite, and Optimization services with all 296 workspace tests passing.
+- **Technical Documentation**: Generated developer onboarding documents for AI Review, AI Rewrite, Prompt Management, and AI Resume Optimization modules.
+
+---
+
 ## [0.7.0] - 2026-07-01
 ### Added
 - **Analytics Foundation**: Implemented centralized statistics layer and mathematical utility functions inside `BaseStatistics`.

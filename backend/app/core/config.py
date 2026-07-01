@@ -48,6 +48,19 @@ class Settings(BaseSettings):
         "docx": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
     }
 
+    # AI settings
+    AI_PROVIDER: str = "ollama"
+    OLLAMA_HOST: str = "http://localhost:11434"
+    OLLAMA_MODEL: str = "qwen2.5:3b"
+    AI_TEMPERATURE: float = 0.3
+    AI_TOP_P: float = 0.9
+    AI_MAX_TOKENS: int = 2048
+    AI_TIMEOUT: int = 60
+    AI_RETRY_COUNT: int = 3
+    PROMPT_CACHE_ENABLED: bool = True
+    PROMPT_CACHE_TTL: int = 300
+    PROMPT_TEMPLATE_PATH: str = "app/ai/prompts/templates"
+
     @field_validator("CORS_ORIGINS", mode="before")
     @classmethod
     def assemble_cors_origins(cls, v: Union[str, List[str]]) -> List[str]:
@@ -65,4 +78,41 @@ class Settings(BaseSettings):
             return [str(item) for item in v]
         return []
 
+    @field_validator("AI_PROVIDER")
+    @classmethod
+    def validate_ai_provider(cls, v: str) -> str:
+        valid_providers = ["ollama", "openai", "anthropic", "gemini", "groq", "together"]
+        if v.lower() not in valid_providers:
+            raise ValueError(f"AI_PROVIDER must be one of {valid_providers}")
+        return v.lower()
+
+    @field_validator("AI_TEMPERATURE")
+    @classmethod
+    def validate_temperature(cls, v: float) -> float:
+        if not (0.0 <= v <= 1.0):
+            raise ValueError("AI_TEMPERATURE must be between 0.0 and 1.0")
+        return v
+
+    @field_validator("AI_TOP_P")
+    @classmethod
+    def validate_top_p(cls, v: float) -> float:
+        if not (0.0 <= v <= 1.0):
+            raise ValueError("AI_TOP_P must be between 0.0 and 1.0")
+        return v
+
+    @field_validator("AI_MAX_TOKENS", "AI_TIMEOUT")
+    @classmethod
+    def validate_positive_int(cls, v: int) -> int:
+        if v <= 0:
+            raise ValueError("Value must be a positive integer")
+        return v
+
+    @field_validator("AI_RETRY_COUNT", "PROMPT_CACHE_TTL")
+    @classmethod
+    def validate_non_negative_int(cls, v: int) -> int:
+        if v < 0:
+            raise ValueError("Value must be a non-negative integer")
+        return v
+
 settings = Settings()
+
